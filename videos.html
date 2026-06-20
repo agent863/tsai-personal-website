@@ -3,151 +3,650 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>衛教影片｜蔡明劭醫師 睡眠呼吸中止症 YouTube</title>
-  <meta name="description" content="蔡明劭醫師衛教影片：睡眠呼吸中止症、CPAP、陽壓呼吸器相關衛教。來自蔡明劭耳鼻喉醫師 YouTube 頻道。">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <title>衛教影片 | 蔡明劭醫師</title>
+  <meta name="description" content="蔡明劭醫師 YouTube 衛教影片，涵蓋睡眠呼吸中止症、鼻塞手術、達文西手術等主題。">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #1a3a5c;
+      --blue: #2563eb;
+      --light: #f0f7ff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+    body { font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; color: var(--text); background: #f8fafc; }
+    nav { background: var(--navy); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { color: white; font-size: 18px; font-weight: 700; text-decoration: none; }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 15px; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: white; }
+    .page-hero { background: linear-gradient(135deg, var(--navy) 0%, #0f4c81 100%); color: white; padding: 56px 24px 48px; text-align: center; }
+    .page-hero h1 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+    .page-hero p { font-size: 1rem; color: #93c5fd; }
+    .yt-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; background: #ff0000; color: white; padding: 10px 24px; border-radius: 24px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: opacity .2s; }
+    .yt-link:hover { opacity: 0.85; }
+    main { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+    .section-label { font-size: 0.8rem; font-weight: 700; color: var(--blue); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .section-title { font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: 32px; }
+    .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+    .video-card { background: white; border-radius: 12px; overflow: hidden; text-decoration: none; color: var(--text); border: 1px solid var(--border); transition: transform .2s, box-shadow .2s; }
+    .video-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .thumb-wrap { position: relative; padding-bottom: 56.25%; background: #0f172a; overflow: hidden; }
+    .thumb-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .play-btn { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white; opacity: 0; transition: opacity .2s; background: rgba(0,0,0,0.35); }
+    .video-card:hover .play-btn { opacity: 1; }
+    .video-title { padding: 12px 14px 16px; font-size: 0.88rem; font-weight: 600; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    footer { background: var(--navy); color: rgba(255,255,255,0.6); text-align: center; padding: 32px 24px; font-size: 0.85rem; margin-top: 24px; }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    @media (max-width: 600px) {
+      .video-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .video-title { font-size: 0.78rem; padding: 8px 10px 12px; }
+    }
+  </style>
 </head>
 <body>
-
-<nav class="nav">
-  <div class="wrap">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="nav-logo-main">蔡明劭 醫師</span>
-        <span class="nav-logo-sub en">Ming-Shao Tsai, MD</span>
-      </a>
-      <div class="nav-links">
-        <a href="about.html">關於醫師</a>
-        <a href="sleep-apnea.html">睡眠呼吸中止症</a>
-        <a href="articles.html">衛教文章</a>
-        <a href="videos.html" class="active">衛教影片</a>
-        <a href="https://medify.com.tw/doctor-43/" target="_blank" rel="noopener" class="nav-cta">前往 Medify ↗</a>
-      </div>
-      <button class="nav-mobile-toggle" id="navToggle" aria-label="開啟選單">
-        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-      </button>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">蔡明劭醫師</a>
+    <div class="nav-links">
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於醫師</a>
+      <a href="videos.html" class="active">衛教影片</a>
+      <a href="articles.html">衛教文章</a>
     </div>
-  </div>
-  <div class="nav-mobile-menu" id="navMobile">
-    <a href="about.html">關於醫師</a>
-    <a href="sleep-apnea.html">睡眠呼吸中止症</a>
-    <a href="articles.html">衛教文章</a>
-    <a href="videos.html">衛教影片</a>
-    <a href="https://medify.com.tw/doctor-43/" target="_blank" rel="noopener">前往 Medify ↗</a>
   </div>
 </nav>
-
-<div style="position:relative;overflow:hidden;">
-  <div style="position:absolute;inset:0;">
-    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1800&q=80" alt="衛教影片" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;">
-    <div style="position:absolute;inset:0;background:linear-gradient(135deg, rgba(6,131,170,.92) 0%, rgba(4,90,118,.88) 50%, rgba(4,90,118,.45) 100%);"></div>
-  </div>
-  <div class="wrap" style="position:relative;padding-top:56px;padding-bottom:52px;">
-    <div class="breadcrumb"><a href="index.html">首頁</a><span>›</span><span>衛教影片</span></div>
-    <h1 style="font-size:36px;font-weight:800;color:white;line-height:1.25;" class="reveal">衛教影片</h1>
-    <p style="font-size:15px;color:rgba(255,255,255,.75);margin-top:10px;max-width:560px;" class="reveal delay-1">蔡明劭耳鼻喉醫師 YouTube 頻道睡眠呼吸中止症與 CPAP 衛教影片</p>
-    <a href="https://www.youtube.com/@drtsaisleep" target="_blank" rel="noopener" class="btn btn-accent" style="margin-top:20px;display:inline-block;" class="reveal delay-2">前往 YouTube 頻道 ↗</a>
-  </div>
-</div>
-
-<section class="section" style="padding-bottom:0;">
-  <div class="wrap">
-    <div class="filter-bar" data-filter-group>
-      <button class="filter-btn active" data-cat="all">全部</button>
-      <button class="filter-btn" data-cat="sleep-apnea">睡眠呼吸中止症</button>
-      <button class="filter-btn" data-cat="cpap">CPAP</button>
-    </div>
-  </div>
+<section class="page-hero">
+  <h1>衛教影片</h1>
+  <p>涵蓋睡眠呼吸中止症、鼻塞手術、達文西手術等主題（共 82 部）</p>
+  <a class="yt-link" href="https://www.youtube.com/@DrTsaiSleep" target="_blank" rel="noopener">
+    ▶ 訂閱 YouTube 頻道（2.2萬訂閱 · 297 部影片）
+  </a>
 </section>
-
-<section class="section" style="padding-top:28px;">
-  <div class="wrap">
-    <div class="videos-grid">
-
-      <a href="https://www.youtube.com/watch?v=0YNI8u_otoc" target="_blank" rel="noopener" class="video-card reveal" data-cat="sleep-apnea">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/0YNI8u_otoc/hqdefault.jpg" alt="發現另一伴有睡眠呼吸中止症" loading="lazy">
-          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);">
-            <div class="video-play">▶</div>
-          </div>
-        </div>
-        <div class="video-info">
-          <div class="article-cat">睡眠呼吸中止症</div>
-          <div class="video-title">發現另一伴有睡眠呼吸中止症</div>
-          <div class="video-meta"><span class="source-badge source-yt">YouTube</span><span class="video-watch">前往觀看 ↗</span></div>
-        </div>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=tuMzaylM5Qk" target="_blank" rel="noopener" class="video-card reveal delay-1" data-cat="cpap">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/tuMzaylM5Qk/hqdefault.jpg" alt="陽壓呼吸器使用上會很複雜嗎" loading="lazy">
-          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);">
-            <div class="video-play">▶</div>
-          </div>
-        </div>
-        <div class="video-info">
-          <div class="article-cat">CPAP 治療</div>
-          <div class="video-title">陽壓呼吸器使用上會很複雜嗎</div>
-          <div class="video-meta"><span class="source-badge source-yt">YouTube</span><span class="video-watch">前往觀看 ↗</span></div>
-        </div>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=tKnzW1Ap-pY" target="_blank" rel="noopener" class="video-card reveal delay-2" data-cat="cpap">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/tKnzW1Ap-pY/hqdefault.jpg" alt="陽壓呼吸器可以使用多久" loading="lazy">
-          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);">
-            <div class="video-play">▶</div>
-          </div>
-        </div>
-        <div class="video-info">
-          <div class="article-cat">CPAP 治療</div>
-          <div class="video-title">陽壓呼吸器可以使用多久</div>
-          <div class="video-meta"><span class="source-badge source-yt">YouTube</span><span class="video-watch">前往觀看 ↗</span></div>
-        </div>
-      </a>
-
-    </div>
-
-    <!-- Channel CTA -->
-    <div style="text-align:center;padding:40px 0 10px;" class="reveal">
-      <div style="background:var(--gray-8);border:1.5px solid var(--gray-7);border-radius:var(--r-lg);padding:36px 32px;max-width:480px;margin:0 auto;">
-        <div style="width:52px;height:52px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:22px;">▶</div>
-        <h3 style="font-size:18px;font-weight:700;color:var(--ink);">蔡明劭耳鼻喉醫師 YouTube 頻道</h3>
-        <p style="font-size:13px;color:var(--gray-3);margin:8px 0 20px;line-height:1.7;">更多蔡醫師影片請前往官方 YouTube 頻道訂閱<br><span class="en" style="color:var(--accent);">@DrTsaiSleep</span></p>
-        <a href="https://www.youtube.com/@drtsaisleep" target="_blank" rel="noopener" class="btn btn-accent">前往訂閱頻道 ↗</a>
+<main>
+  <div class="section-label">影片庫</div>
+  <div class="section-title">全部衛教影片</div>
+  <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=tuMzaylM5Qk" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/tuMzaylM5Qk/hqdefault.jpg" alt="陽壓呼吸器使用上會很複雜嗎">
+        <div class="play-btn">▶</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<div class="cta-band">
-  <div class="wrap">
-    <h2 class="reveal">想看更多衛教內容？</h2>
-    <p class="reveal delay-1">閱讀蔡醫師的文章或前往 Medify 查看完整內容</p>
-    <div class="btns">
-      <a href="articles.html" class="btn btn-accent btn-lg reveal delay-1">查看衛教文章</a>
-      <a href="https://medify.com.tw/doctor-43/" target="_blank" rel="noopener" class="btn btn-outline-white btn-lg reveal delay-2">前往 Medify ↗</a>
-    </div>
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer-inner">
-      <div class="footer-logo">蔡明劭 醫師<span class="en">Ming-Shao Tsai, MD</span></div>
-      <div class="footer-links">
-        <a href="about.html">關於醫師</a>
-        <a href="sleep-apnea.html">睡眠呼吸中止症</a>
-        <a href="articles.html">衛教文章</a>
-        <a href="videos.html">衛教影片</a>
+      <div class="video-title">陽壓呼吸器使用上會很複雜嗎</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=tKnzW1Ap-pY" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/tKnzW1Ap-pY/hqdefault.jpg" alt="陽壓呼吸器可以使用多久">
+        <div class="play-btn">▶</div>
       </div>
-    </div>
-    <p class="footer-copy">© 2025 蔡明劭醫師個人網站｜本站內容僅供衛教參考，實際醫療問題請諮詢專業醫師。<br>Photos: <a href="https://unsplash.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,.3);">Unsplash</a> (Unsplash License)</p>
+      <div class="video-title">陽壓呼吸器可以使用多久</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=0YNI8u_otoc" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/0YNI8u_otoc/hqdefault.jpg" alt="發現另一伴有睡眠呼吸中止症">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">發現另一伴有睡眠呼吸中止症</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=QrJgI5CWbEU" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/QrJgI5CWbEU/hqdefault.jpg" alt="做DISE檢測的費用可以使用健保補助嗎">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">做DISE檢測的費用可以使用健保補助嗎</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=edG2kj_IiJo" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/edG2kj_IiJo/hqdefault.jpg" alt="做DISE檢設過程中有麻醉需要如何安排做檢測">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">做DISE檢設過程中有麻醉需要如何安排做檢測</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=QwM_VvOig8k" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/QwM_VvOig8k/hqdefault.jpg" alt="有睡眠呼吸中止症的疑慮有手機APP可以監測自己的狀況嗎">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">有睡眠呼吸中止症的疑慮有手機APP可以監測自己的狀況嗎</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=oskEQ2BaNE0" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/oskEQ2BaNE0/hqdefault.jpg" alt="有沒有可能在醫院睡覺檢查中因為過度緊張反而失眠嚴重不準確">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">有沒有可能在醫院睡覺檢查中因為過度緊張反而失眠嚴重不準確</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=resQQA5Zloc" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/resQQA5Zloc/hqdefault.jpg" alt="什麼睡姿最好？">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">什麼睡姿最好？</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=wxTW7TDllNU" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/wxTW7TDllNU/hqdefault.jpg" alt="如果調整枕頭高度">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">如果調整枕頭高度</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=1fnPtJqszaU" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/1fnPtJqszaU/hqdefault.jpg" alt="如果不處理睡眠呼吸中止症之後會有什麼併發症嗎">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">如果不處理睡眠呼吸中止症之後會有什麼併發症嗎</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=wztDHxfFsdY" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/wztDHxfFsdY/hqdefault.jpg" alt="DISE是什麼樣的檢測">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">DISE是什麼樣的檢測</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=HPnduQmDnjo" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/HPnduQmDnjo/hqdefault.jpg" alt="電燒刀跟電漿刀的差異">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">電燒刀跟電漿刀的差異</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=jxt64sqSFYg" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/jxt64sqSFYg/hqdefault.jpg" alt="達文西手術安全又精準的祕密——蔡明劭醫師分享：從術前到術中，每一步都做到最仔細">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西手術安全又精準的祕密——蔡明劭醫師分享：從術前到術中，每一步都做到最仔細</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=w7adHe27N1I" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/w7adHe27N1I/hqdefault.jpg" alt="陽壓呼吸器使用多久">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">陽壓呼吸器使用多久</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=e-SjaBVMfKw" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/e-SjaBVMfKw/hqdefault.jpg" alt="陽壓呼吸器政府有補助嗎?">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">陽壓呼吸器政府有補助嗎?</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=96Hf3nBn7W0" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/96Hf3nBn7W0/hqdefault.jpg" alt="開完到後有沒有可能呼吸中止症會復發">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">開完到後有沒有可能呼吸中止症會復發</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=O0TZYWBCaTc" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/O0TZYWBCaTc/hqdefault.jpg" alt="耳鼻喉頭頸外科的達文西手術——座椅高度、指套、組織精準手術：讓手術效果好又安全的關鍵">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">耳鼻喉頭頸外科的達文西手術——座椅高度、指套、組織精準手術：讓手術效果好又安全的關鍵</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=U6GdXjYUlR4" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/U6GdXjYUlR4/hqdefault.jpg" alt="睡眠呼吸中止症開刀有哪些方式">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">睡眠呼吸中止症開刀有哪些方式</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=E2W4F676O_g" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/E2W4F676O_g/hqdefault.jpg" alt="減重對呼吸中止症有幫助嗎">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">減重對呼吸中止症有幫助嗎</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=0s4EqQkoppI" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/0s4EqQkoppI/hqdefault.jpg" alt="像開鋼彈一樣的手術？加上瘦瘦針，睡眠呼吸中止症治療全面進化">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">像開鋼彈一樣的手術？加上瘦瘦針，睡眠呼吸中止症治療全面進化</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=U8dJm_1rxAs" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/U8dJm_1rxAs/hqdefault.jpg" alt="若選擇開刀處理術後可能會遇到的狀況">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">若選擇開刀處理術後可能會遇到的狀況</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=NoiBEOMyYEI" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/NoiBEOMyYEI/hqdefault.jpg" alt="如果減重後呼吸中止症沒有改善怎麼辦">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">如果減重後呼吸中止症沒有改善怎麼辦</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=_Vft2gwrH7c" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/_Vft2gwrH7c/hqdefault.jpg" alt="止鼾器可以代替陽壓呼吸器嗎">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">止鼾器可以代替陽壓呼吸器嗎</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=syYqQLoxlEc" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/syYqQLoxlEc/hqdefault.jpg" alt="手術完該如何注意才不會狀況再復發">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">手術完該如何注意才不會狀況再復發</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=SNrEa1t6yUM" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/SNrEa1t6yUM/hqdefault.jpg" alt="睡眠呼吸中止症該如何診斷">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">睡眠呼吸中止症該如何診斷</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=4lhKBXmRZuI" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/4lhKBXmRZuI/hqdefault.jpg" alt="睡眠呼吸中止症處理方式一定要開刀嗎">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">睡眠呼吸中止症處理方式一定要開刀嗎</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=HCvbA0kzr30" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/HCvbA0kzr30/hqdefault.jpg" alt="扁桃腺電燒（傳統方式）的限制與缺點">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">扁桃腺電燒（傳統方式）的限制與缺點</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=aHBOqnsyhR0" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/aHBOqnsyhR0/hqdefault.jpg" alt="內視鏡低溫微創鼻道手術——三合一 Hybrid 技術（轉位、消融、適度修剪）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">內視鏡低溫微創鼻道手術——三合一 Hybrid 技術（轉位、消融、適度修剪）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=L4V6D5ud0Vo" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/L4V6D5ud0Vo/hqdefault.jpg" alt="微創鼻竇內視鏡手術，使用手術耗材 Surgiflo 止血劑，Protahere 防沾黏凝膠">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">微創鼻竇內視鏡手術，使用手術耗材 Surgiflo 止血劑，Protahere 防沾黏凝膠</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=iorrJK_xdWs" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/iorrJK_xdWs/hqdefault.jpg" alt="PRP 高濃度血小板血漿 成分講解及實際使用於耳鼻喉手術">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">PRP 高濃度血小板血漿 成分講解及實際使用於耳鼻喉手術</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=R2TFhe7P67k" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/R2TFhe7P67k/hqdefault.jpg" alt="傳統下鼻甲修剪術——不花俏、最踏實的效果、零熱傷害的安全手術">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">傳統下鼻甲修剪術——不花俏、最踏實的效果、零熱傷害的安全手術</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=HGYQR8BeMxU" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/HGYQR8BeMxU/hqdefault.jpg" alt="微創精緻鼻中膈鼻道手術——矯正鼻中膈＋精準下鼻甲修剪，讓鼻道從前到後均勻通暢">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">微創精緻鼻中膈鼻道手術——矯正鼻中膈＋精準下鼻甲修剪，讓鼻道從前到後均勻通暢</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=PPmHOoS0ZfQ" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/PPmHOoS0ZfQ/hqdefault.jpg" alt="低溫雙極刀 + 張口器正確架設示範——微創精準睡眠手術 × 3D立體空間重塑縫合法">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫雙極刀 + 張口器正確架設示範——微創精準睡眠手術 × 3D立體空間重塑縫合法</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=RzZo6pnSMU4" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/RzZo6pnSMU4/hqdefault.jpg" alt="低溫雙極刀 + 微創精準睡眠手術：安全、有效、出血量極低的睡眠手術">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫雙極刀 + 微創精準睡眠手術：安全、有效、出血量極低的睡眠手術</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=Li7Bs0vQZzg" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/Li7Bs0vQZzg/hqdefault.jpg" alt="達文西睡眠手術——完整詳細解說：如何做到精準、安全、有效">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西睡眠手術——完整詳細解說：如何做到精準、安全、有效</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=zfVjcSjkvxg" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/zfVjcSjkvxg/hqdefault.jpg" alt="腺樣體刮除手術——傳統器械 + 快可止血敷片止血：安全、穩定、精準">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">腺樣體刮除手術——傳統器械 + 快可止血敷片止血：安全、穩定、精準</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=QbuPAAJCcBw" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/QbuPAAJCcBw/hqdefault.jpg" alt="低溫雙極刀扁桃腺微創手術——精準切除、出血少、疼痛輕、恢復快">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫雙極刀扁桃腺微創手術——精準切除、出血少、疼痛輕、恢復快</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=3nXn5qTeVsY" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/3nXn5qTeVsY/hqdefault.jpg" alt="雙極氣化下鼻甲消融手術——安全．快速．有效．免住院">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">雙極氣化下鼻甲消融手術——安全．快速．有效．免住院</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=zbOALinsGFQ" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/zbOALinsGFQ/hqdefault.jpg" alt="內視鏡精準下鼻甲雙極電燒消融手術 + 修剪下鼻甲（Hybrid 技術）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">內視鏡精準下鼻甲雙極電燒消融手術 + 修剪下鼻甲（Hybrid 技術）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=8KkPRwXuoqw" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/8KkPRwXuoqw/hqdefault.jpg" alt="鼻塞手術示範——鼻中膈矯正＋下鼻甲修剪＋TISSEEL止血與蛋白質敷料應用">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">鼻塞手術示範——鼻中膈矯正＋下鼻甲修剪＋TISSEEL止血與蛋白質敷料應用</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=iZnwDzGfw_A" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/iZnwDzGfw_A/hqdefault.jpg" alt="小兒阻塞性睡眠呼吸中止症（OSA） 標準治療手術（Tonsillectomy and Adenoidectomy, T&A）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">小兒阻塞性睡眠呼吸中止症（OSA） 標準治療手術（Tonsillectomy and Adenoidectomy, T&A）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=f0djeAHXkaI" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/f0djeAHXkaI/hqdefault.jpg" alt="後鼻神經燒灼減敏手術 的臨床操作">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">後鼻神經燒灼減敏手術 的臨床操作</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=smrwWXGZG0U" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/smrwWXGZG0U/hqdefault.jpg" alt="冷光內視鏡強化模式下觀察下鼻甲修剪手術傷口，示範 Surgiflo 止血敷料 的臨床應用">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">冷光內視鏡強化模式下觀察下鼻甲修剪手術傷口，示範 Surgiflo 止血敷料 的臨床應用</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=zHRISdsKdOE" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/zHRISdsKdOE/hqdefault.jpg" alt="達文西睡眠手術——舌根淋巴減積全解析：精準切除 × 充分保留肌肉與黏膜">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西睡眠手術——舌根淋巴減積全解析：精準切除 × 充分保留肌肉與黏膜</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=9OgPyT6Qhz8" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/9OgPyT6Qhz8/hqdefault.jpg" alt="下鼻甲修剪 + 鼻中膈檢體陳列">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">下鼻甲修剪 + 鼻中膈檢體陳列</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=Lwok5VfV8hE" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/Lwok5VfV8hE/hqdefault.jpg" alt="矯正鼻中膈手術，剝離並區分鼻中膈左右側黏膜與軟骨">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">矯正鼻中膈手術，剝離並區分鼻中膈左右側黏膜與軟骨</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=izyOcoF28kI" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/izyOcoF28kI/hqdefault.jpg" alt="下鼻甲修剪手術——傳統技術，效果好又持久">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">下鼻甲修剪手術——傳統技術，效果好又持久</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=YrdBqK8Gid0" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/YrdBqK8Gid0/hqdefault.jpg" alt="低溫氣化棒下鼻甲消融特寫鏡頭">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫氣化棒下鼻甲消融特寫鏡頭</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=dH9zH7gMjXM" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/dH9zH7gMjXM/hqdefault.jpg" alt="下鼻甲低溫消融微創手術——一縷輕煙散去，鼻子就暢通了">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">下鼻甲低溫消融微創手術——一縷輕煙散去，鼻子就暢通了</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=AMzlZaT8UtM" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/AMzlZaT8UtM/hqdefault.jpg" alt="低溫微創扁桃腺切除術——安全精準、疼痛最小化、恢復快速、幾乎零出血">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫微創扁桃腺切除術——安全精準、疼痛最小化、恢復快速、幾乎零出血</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=U2HhJN5K9Sk" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/U2HhJN5K9Sk/hqdefault.jpg" alt="鼻中膈矯正手術 Septoplasty——矯正鼻中膈 後 黏膜完整保留 鼻道變得暢通">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">鼻中膈矯正手術 Septoplasty——矯正鼻中膈 後 黏膜完整保留 鼻道變得暢通</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=bBf66BUnPOo" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/bBf66BUnPOo/hqdefault.jpg" alt="鼻塞手術示範——鼻中膈矯正＋下鼻甲修剪＋TISSEEL止血">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">鼻塞手術示範——鼻中膈矯正＋下鼻甲修剪＋TISSEEL止血</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=niqx4xVHq4Y" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/niqx4xVHq4Y/hqdefault.jpg" alt="冷光內視鏡強化模式下觀察下鼻甲修剪手術傷口">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">冷光內視鏡強化模式下觀察下鼻甲修剪手術傷口</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=pcGpBKJk73Q" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/pcGpBKJk73Q/hqdefault.jpg" alt="達文西睡眠手術——舌根淋巴積全解析：精準切除 × 充分保留肌肉與黏膜">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西睡眠手術——舌根淋巴積全解析：精準切除 × 充分保留肌肉與黏膜</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=2a0XKzOb7EE" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/2a0XKzOb7EE/hqdefault.jpg" alt="下鼻甲修剪＋鼻中膈樣體陳列">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">下鼻甲修剪＋鼻中膈樣體陳列</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=0a6HvNfhBm0" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/0a6HvNfhBm0/hqdefault.jpg" alt="矯正鼻中膈手術，剖離並區分鼻中膈左右側黏膜與軟骨">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">矯正鼻中膈手術，剖離並區分鼻中膈左右側黏膜與軟骨</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=OuN5uo7j_7Y" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/OuN5uo7j_7Y/hqdefault.jpg" alt="下鼻甲修剪手術——傳統技術，效果好又持久">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">下鼻甲修剪手術——傳統技術，效果好又持久</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=RZTOfxCXfvU" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/RZTOfxCXfvU/hqdefault.jpg" alt="低溫氣化棒下鼻甲消融特寫鏡頭">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫氣化棒下鼻甲消融特寫鏡頭</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=h_r_xH1LRHU" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/h_r_xH1LRHU/hqdefault.jpg" alt="下鼻甲低溫消融微創手術——一縷輕煙散去，鼻子就暢通了">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">下鼻甲低溫消融微創手術——一縷輕煙散去，鼻子就暢通了</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=eSqHIBpKA6c" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/eSqHIBpKA6c/hqdefault.jpg" alt="低溫微創扁桃腺切除術——安全精準、疼痛最小化、恢復快速">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫微創扁桃腺切除術——安全精準、疼痛最小化、恢復快速</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=3Z4NcMT6w0g" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/3Z4NcMT6w0g/hqdefault.jpg" alt="鼻中膈矯正手術 Septoplasty——矯正鼻中膈 後 黏膜完整保留 鼻道變得暢通">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">鼻中膈矯正手術 Septoplasty——矯正鼻中膈 後 黏膜完整保留 鼻道變得暢通</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=XA7SbbZYAtA" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/XA7SbbZYAtA/hqdefault.jpg" alt="達文西機械手臂舌根淋巴精準切除手術——深部視野、微創、安全（TORS for OSA）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西機械手臂舌根淋巴精準切除手術——深部視野、微創、安全（TORS for OSA）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=XE5GR3XNIQM" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/XE5GR3XNIQM/hqdefault.jpg" alt="達文西機械手臂精準扁桃腺切除手術（TORS for OSA）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西機械手臂精準扁桃腺切除手術（TORS for OSA）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=yEVwSxEj6fE" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/yEVwSxEj6fE/hqdefault.jpg" alt="達文西睡眠手術解說：術前準備非常重要，感謝最優質的長庚醫院手術團隊">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西睡眠手術解說：術前準備非常重要，感謝最優質的長庚醫院手術團隊</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=0gLJRPjibWI" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/0gLJRPjibWI/hqdefault.jpg" alt="達文西舌根減積手術快速解析：精準切除舌扁桃，保留肌肉與黏膜">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西舌根減積手術快速解析：精準切除舌扁桃，保留肌肉與黏膜</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=g7MrGGbCiVs" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/g7MrGGbCiVs/hqdefault.jpg" alt="螢光內視鏡輔助辨識 SPA 大血管：鼻神經燒灼手術更安全有保障">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">螢光內視鏡輔助辨識 SPA 大血管：鼻神經燒灼手術更安全有保障</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=Jq8Vv0zf4Tc" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/Jq8Vv0zf4Tc/hqdefault.jpg" alt="鼻中膈成形手術 × 羊膜滋養層敷料">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">鼻中膈成形手術 × 羊膜滋養層敷料</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=BNSzPqnLMXk" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/BNSzPqnLMXk/hqdefault.jpg" alt="鼻道鼻中膈成形手術 × Quicklot 止血紗布">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">鼻道鼻中膈成形手術 × Quicklot 止血紗布</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=yZHFJ7z-UdU" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/yZHFJ7z-UdU/hqdefault.jpg" alt="鼻中膈矯正手術 Septoplasty——說明清楚分開黏膜和軟骨 切除彎曲 保留黏膜">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">鼻中膈矯正手術 Septoplasty——說明清楚分開黏膜和軟骨 切除彎曲 保留黏膜</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=_PJKZwF6APE" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/_PJKZwF6APE/hqdefault.jpg" alt="達文西機械手臂：高精準扁桃腺切除手術">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西機械手臂：高精準扁桃腺切除手術</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=6jfyd17e4xQ" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/6jfyd17e4xQ/hqdefault.jpg" alt="TORS 舌根手術示範——解剖層次＋Surgiflo 止血技巧臨床應用（TORS for OSA）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">TORS 舌根手術示範——解剖層次＋Surgiflo 止血技巧臨床應用（TORS for OSA）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=uLOYcwMmVcY" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/uLOYcwMmVcY/hqdefault.jpg" alt="達文西機械手臂舌根淋巴精準切除手術——深部視野、微創、安全（TORS for OSA）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西機械手臂舌根淋巴精準切除手術——深部視野、微創、安全（TORS for OSA）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=aQwS1U7edCA" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/aQwS1U7edCA/hqdefault.jpg" alt="達文西機械手臂精準扁桃腺切除手術（TORS for OSA）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西機械手臂精準扁桃腺切除手術（TORS for OSA）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=KHMMuki1dUM" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/KHMMuki1dUM/hqdefault.jpg" alt="達文西睡眠手術解說：術前準備非常重要，感謝最優質的長庚醫院手術團隊（TORS for OSA）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西睡眠手術解說：術前準備非常重要，感謝最優質的長庚醫院手術團隊（TORS for OSA）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=C8PP4pRuFR0" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/C8PP4pRuFR0/hqdefault.jpg" alt="達文西舌根減積手術快速解析：精準切除舌扁桃，保留肌肉與黏膜（TORS for OSA）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西舌根減積手術快速解析：精準切除舌扁桃，保留肌肉與黏膜（TORS for OSA）</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=GsBtgqlQ7hQ" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/GsBtgqlQ7hQ/hqdefault.jpg" alt="螢光內視鏡輔助辨識 SPA 大血管：鼻神經燒灼手術更安全有保障">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">螢光內視鏡輔助辨識 SPA 大血管：鼻神經燒灼手術更安全有保障</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=a82U1UtEs34" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/a82U1UtEs34/hqdefault.jpg" alt="低溫雙極刀精準切除扁桃腺：時間短，溫度低，疼痛輕，出血量少">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫雙極刀精準切除扁桃腺：時間短，溫度低，疼痛輕，出血量少</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=5oLCLXodGzw" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/5oLCLXodGzw/hqdefault.jpg" alt="低溫雙極刀扁桃腺切除：精準切除扁桃腺，出血量趨近於0">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">低溫雙極刀扁桃腺切除：精準切除扁桃腺，出血量趨近於0</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=8hMAqemPlyc" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/8hMAqemPlyc/hqdefault.jpg" alt="微創內視鏡鼻竇手術精準夾除鼻瘜肉">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">微創內視鏡鼻竇手術精準夾除鼻瘜肉</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=x029QjjOhww" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/x029QjjOhww/hqdefault.jpg" alt="螢光內視鏡輔助辨識血管：中鼻甲與下鼻甲低溫射頻雷射手術">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">螢光內視鏡輔助辨識血管：中鼻甲與下鼻甲低溫射頻雷射手術</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=CqqLklCogBo" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/CqqLklCogBo/hqdefault.jpg" alt="下鼻甲氣化術與後鼻神經燒灼手術：螢光顯影技術輔助辨識 SPA 大血管">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">下鼻甲氣化術與後鼻神經燒灼手術：螢光顯影技術輔助辨識 SPA 大血管</div>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=BLkU6hYKK7c" target="_blank" rel="noopener">
+      <div class="thumb-wrap">
+        <img loading="lazy" src="https://img.youtube.com/vi/BLkU6hYKK7c/hqdefault.jpg" alt="達文西睡眠手術——舌根淋巴減積手術（精準切除）">
+        <div class="play-btn">▶</div>
+      </div>
+      <div class="video-title">達文西睡眠手術——舌根淋巴減積手術（精準切除）</div>
+    </a>
   </div>
+</main>
+<footer>
+  <p>© 2026 蔡明劭醫師. 版權所有. | <a href="https://www.youtube.com/@DrTsaiSleep" target="_blank">YouTube @DrTsaiSleep</a></p>
 </footer>
-<script src="js/main.js"></script>
 </body>
 </html>
