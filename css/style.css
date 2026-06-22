@@ -367,7 +367,7 @@ ul { list-style: none; }
 }
 .hero-card-photo {
   width: 100%;
-  height: 220px;
+  height: 280px;
   background: rgba(255,255,255,.1);
   border-radius: var(--r-md);
   overflow: hidden;
